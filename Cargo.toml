@@ -1,0 +1,10 @@
+[package]
+name = "cuda-instruction-set"
+version = "0.1.0"
+edition = "2021"
+description = "Agent-native instruction set with confidence propagation, A2A encoding, and biological instinct opcodes"
+license = "MIT"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
