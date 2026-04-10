@@ -2,7 +2,7 @@
 name = "cuda-instruction-set"
 version = "0.1.0"
 edition = "2021"
-description = "Agent instruction set — 80 opcodes, assembler, disassembler, A2A encoding"
+description = "80 opcodes with assembler and A2A encoding"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Lucineer/cuda-instruction-set"
 readme = "README.md"
@@ -10,5 +10,5 @@ keywords = ["ai", "fleet", "agent", "rust"]
 categories = ["science"]
 
 [dependencies]
-cuda-equipment = "0.1"
 serde = { version = "1", features = ["derive"] }
+
