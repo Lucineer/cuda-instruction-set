@@ -502,7 +502,7 @@ mod tests {
         for b in 0..=0x7F {
             let op = Opcode::from_byte(b).unwrap();
             assert_eq!(op.to_byte(), b);
-            assert_eq!(op.category(), Opcode::Nop.category() if b == 0 else op.category());
+            if b == 0 { assert_eq!(op.category(), Opcode::Nop.category()); }
         }
         assert!(Opcode::from_byte(0x80).is_none());
     }
